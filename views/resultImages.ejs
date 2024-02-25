@@ -1,0 +1,24 @@
+<%- include('partials/header') %>
+
+    <body>
+
+        <div class="search-bar">
+            <form action="/home" method="post">
+                <input type="text" name="search" id="search" class="search-bar-input">
+                <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <hr>
+
+        <div id="imageContainer" class="posts">
+            <% images.forEach((image, index)=> { %>
+                <div class="masonry-item"><img src="<%= image %>" alt="<%= image %>" onclick="showImageinTab(this.src)">
+                    <%= caption[index] %>
+                </div>
+                <% }); %>
+
+        </div>
+
+    </body>
+
+    </html>

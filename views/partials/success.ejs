@@ -1,0 +1,15 @@
+<%- include('auth-header')%>
+<body>
+    <div class="msg">
+        <%= msg %> <br><br>
+     <button class="ok-button" onclick="goForward()">Ok</button>
+
+    </div>
+
+    <script>
+        function goForward(){
+            window.location.href = "<%=location %>";
+        }
+    </script>
+</body>
+</html>

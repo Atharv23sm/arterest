@@ -1,0 +1,15 @@
+<%- include('auth-header') %>
+
+<body>
+    <div class="error-msg">
+        <%= error %> <br><br>
+        <button class="ok-button" onclick="goBack()">Ok</button>
+    </div>
+
+    <script>
+        function goBack(){
+            history.back();
+        }
+    </script>
+</body>
+</html>

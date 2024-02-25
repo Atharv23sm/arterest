@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+
+<body>
+    <div class="upload-container">
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" accept="image/*" name="myImage" id="file-input" onchange="displaySelectedImage()" required/><br><br>
+        <!-- <div id="selectedFile">
+            <img src="" alt="" id="selected-img">
+        </div> -->
+        Caption <br><input type="text" name="caption" id="caption" class="input" required><br><br>
+        <input type="submit" value="Upload" class="button" />
+        </form>
+
+    </div>
+
+<%- include('partials/footer') %>
+    

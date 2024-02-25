@@ -1,0 +1,149 @@
+<%- include('partials/header') %>
+
+
+
+  <body>
+
+    <div class="home-container" style="margin-top:8rem;">
+
+      <div class="search-bar">
+        <form action="/home" method="post">
+          <input type="text" name="search" id="search" class="search-bar-input">
+          <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+
+      <div class="posts">
+        <div class="masonry-item">
+          <img src="images/sample1.jpg" alt="">
+        </div>
+
+        <div class="masonry-item">
+          <img src="images/sample2.jpg" alt="">
+        </div>
+        <div class="masonry-item">
+          <img src="images/sample3.jpg" alt="">
+        </div>
+        <div class="masonry-item">
+          <img src="images/sample4.jpg" alt="">
+        </div>
+
+        <div class="masonry-item">
+          <img src="images/sample5.jpg" alt="">
+        </div>
+        <div class="masonry-item">
+          <img src="images/sample6.jpg" alt="">
+        </div>
+        <div class="masonry-item">
+          <img src="images/sample7.jpg" alt="">
+        </div>
+        <div class="masonry-item">
+          <img src="sample8.jpg" alt="">
+        </div>
+
+        <div class="masonry-item">
+          <img src="images/sample9.jpg" alt="">
+        </div>
+        <div class="masonry-item">
+          <img src="images/sample10.jpg" alt="">
+        </div>
+
+        <div class="masonry-item">
+          <img src="images/sample11.jpg" alt="">
+        </div>
+
+        <div class="masonry-item">
+          <img src="images/sample12.jpg" alt="">
+        </div>
+        <div class="masonry-item">
+          <img src="images/sample13.jpg" alt="">
+        </div>
+        <div class="masonry-item">
+          <img src="images/sample14.jpg" alt="">
+        </div>
+
+        <div class="masonry-item">
+          <img src="images/sample15.jpeg" alt="">
+        </div>
+        <div class="masonry-item">
+          <img src="images/sample16.jpg" alt="">
+        </div>
+        <div class="masonry-item">
+          <img src="images/sample17.jpg" alt="">
+        </div>
+        <div class="masonry-item">
+          <img src="sample18.jpg" alt="">
+        </div>
+
+        <div class="masonry-item">
+          <img src="images/sample19.jpg" alt="">
+        </div>
+        <div class="masonry-item">
+          <img src="images/sample20.jpg" alt="">
+        </div>
+        <div class="masonry-item">
+          <img src="images/sample21.jpg" alt="">
+        </div>
+        <div class="masonry-item">
+          <img src="images/sample22.jpg" alt="">
+        </div>
+        <div class="masonry-item">
+          <img src="images/sample23.jpg" alt="">
+        </div>
+        <div class="masonry-item">
+          <img src="images/sample24.jpg" alt="">
+        </div>
+
+        <div class="masonry-item">
+          <img src="images/sample25.jpg" alt="">
+        </div>
+        <div class="masonry-item">
+          <img src="images/sample26.jpeg" alt="">
+        </div>
+        <div class="masonry-item">
+          <img src="images/sample27.jpg" alt="">
+        </div>
+        <div class="masonry-item">
+          <img src="sample28.jpg" alt="">
+        </div>
+
+        <div class="masonry-item">
+          <img src="images/sample29.jpg" alt="">
+        </div>
+        <div class="masonry-item">
+          <img src="images/sample30.jpg" alt="">
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <!-- 
+    <script>
+      function searchImages() {
+        const keyword = document.getElementById('search').value;
+        
+        fetch(`/search?keyword=${keyword}`)
+          .then(response => response.json())
+          .then(data => {
+            displayImages(data.results);
+          })
+          .catch(error => console.error('Error:', error));
+      }
+  
+      function displayImages(images) {
+        const imageContainer = document.getElementById('imageContainer');
+        imageContainer.innerHTML = ''; // Clear previous results
+  
+        images.forEach(image => {
+          const imgElement = document.createElement('img');
+          imgElement.src = `uploads/${image}`;
+          imgElement.alt = image;
+          imageContainer.appendChild(imgElement);
+        });
+      }
+    </script> -->
+
+
+    <%- include('partials/footer') %>

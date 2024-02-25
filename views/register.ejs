@@ -1,0 +1,19 @@
+<%- include('partials/auth-header') %>
+
+  <body>
+
+    <div class="form-container">
+  
+    <form action="/register" method="post">
+      <span class = "span">Create New Account</span><br>
+      <hr style=" border: 1.5px solid black;"><br>
+      Name <br><input type="text" name="name" id="" class="input" required><br>
+      Email <br><input type="text" name="email" id="" class="input" required><br>
+      Username <br><input type="text" name="username" id="" class="input" required><br>
+      Password <br><input type="password" name="password" id="password" class="input" minlength="6" maxlength="10" required><i class="fa fa-eye" style="margin-left: -1.8rem; cursor: pointer;" onclick="showPassword()"></i><br>
+      <input type="submit" class="button" value="Register"><br><br>
+      <span style="text-align: center;">Already registered? <a href="/login">Login here</a></span>
+    </form>
+</div>
+  </body>
+</html>
