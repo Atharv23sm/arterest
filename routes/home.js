@@ -8,7 +8,7 @@ const postModel = require('./users').posts;
 // Home Route
 router.get('/home', (req, res) => {
     if (req.session.isValid === 1) {
-        res.render('Home', { title: "Home", username: req.session.username, images: null });
+        res.render('home', { title: "Home", username: req.session.username, images: null });
     } else {
         res.redirect('/');
     }
