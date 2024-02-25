@@ -19,16 +19,17 @@ body {
 .navbar-container {
   position: fixed;
   top: 30px;
-  left: 30px;
+  right: 30px;
   display: flex;
   align-items: center;
   gap: 4rem;
   width: fit-content;
   padding: 1rem 2rem;
-  background-color: #22221199;
+  background-color: #1c293fbb;
   backdrop-filter: blur(4px);
-  border-radius: 30px;
+  border-radius: 1rem;
   color: #fff;
+  z-index: 3;
 }
 
 .navbar {
@@ -46,16 +47,17 @@ body {
 .header-profile-container {
   position: fixed;
   top: 30px;
-  right: 30px;
+  left: 30px;
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
   width: fit-content;
   padding: 1rem 2rem;
-  background-color: #22221199;
+  background-color: #1c293fbb;
   backdrop-filter: blur(4px);
-  border-radius: 30px;
+  border-radius: 1rem;
   color: #fff;
+  z-index: 2;
 }
 
 .header a {
@@ -90,7 +92,7 @@ body {
 }
 
 .explore-button:hover {
-  background: #00000022;
+  background: #ffa83e9c;
 }
 
 .auth-container {
@@ -102,7 +104,7 @@ body {
   color: #000000;
   text-align: left;
   margin: 4rem auto;
-  background: #ffffff11;
+  background: #ffffff44;
   backdrop-filter: blur(4px);
   width: fit-content;
   height: fit-content;
@@ -131,10 +133,10 @@ body {
 
 .button {
   width: 274px;
-  background: #1365ff;
+  background: #1c293f;
   padding: 6px 10px;
   color: #fff;
-  border: 2px solid #6688ff;
+  border: 2px solid #7789c5;
   font-size: 20px;
   font-family: 'outfit';
   transition: 1s;
@@ -151,9 +153,9 @@ body {
 }
 
 .button:hover {
-  box-shadow: 0 0 20px #07262d;
-  background: #3f83ff;
-  border: 2px solid #0a278d;
+  box-shadow: 0 0 15px #7789c5;
+  background: #7789c5;
+  border: 2px solid #1c293f;
 
 }
 
@@ -195,11 +197,11 @@ body {
   flex-direction: column;
   width: fit-content;
   height: fit-content;
-  padding: 1rem;
   margin: 6rem auto;
 }
 
 .profile-image {
+  background: #1c293f;
   width: 200px;
   margin: 0 auto;
   height: 200px;
@@ -220,6 +222,7 @@ body {
 
 .avtars {
   display: none;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 2rem auto;
 }
@@ -284,8 +287,8 @@ body {
 .upload-container {
   color: #000000;
   text-align: left;
-  margin: 8rem auto;
-  background: #ffffff11;
+  margin: 10rem auto;
+  background: #ffffff66;
   backdrop-filter: blur(4px);
   width: fit-content;
   height: fit-content;
@@ -317,13 +320,13 @@ footer {
   margin: 0 auto;
   text-align: center;
   padding: 1rem 4rem;
-  background-color: #000;
+  background-color: #1c293f;
   color: #fff;
 }
 
 .contact {
   display: flex;
-  margin: 20px auto;
+  margin: 0 auto;
   justify-content: center;
   justify-self: center;
 }
@@ -344,8 +347,13 @@ footer i {
     gap: 1rem;
   }
 
+  .navbar-container{
+    gap: 2rem;
+    align-items: normal;
+  }
+
   .welcome-title {
-    font-size: 70px;
+    font-size: 80px;
   }
 
   .posts {
@@ -359,22 +367,51 @@ footer i {
 @media screen and (max-width:700px) {
 
   .posts {
-
     padding: 1rem 2rem;
-
     column-count: 3;
+  }
 
+  .welcome-container{
+    margin:12rem auto;
+  }
+
+  .welcome-title {
+    font-size: 70px;
   }
 
   .search-bar .search-bar-input {
     width: 400px;
   }
+
+  .header-profile-container {
+    top: 25px;
+    left: 20px;
+    gap:2rem;
+  }
+
+  .navbar-container {
+    top: 25px;
+    right: 20px;
+  }
+
+  .avtars img {
+    width: 100px;
+    margin: 0.7rem;
+}
 }
 
 @media screen and (max-width:500px) {
 
-  .form-container .input {
+  .form-container .input, .upload-container .input {
     width: 220px;
+  }
+
+  .welcome-container{
+    margin:10rem auto;
+  }
+
+  .explore-button{
+    margin:3rem 0.5rem;
   }
 
   .button {
@@ -382,14 +419,32 @@ footer i {
   }
 
   .posts {
-
-    padding: 1rem 2rem;
-
+    padding: 0.7rem 1rem;
     column-count: 2;
-
   }
 
   .search-bar .search-bar-input {
     width: 260px;
   }
+
+  
+  .header-profile-container {
+    top: 20px;
+    left: 12px;
+    padding: 9px 14px;
+    border-radius: 10px;
+  }
+
+  .navbar-container {
+    top: 20px;
+    right: 12px;
+    padding: 9px 14px;
+    border-radius: 6px;
+  }
+
+  .avtars img {
+    width: 60px;
+    margin: 0.4rem;
+}
+
 }

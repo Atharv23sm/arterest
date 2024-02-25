@@ -1,47 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
+    <title>
+        <%= title %>
+    </title>
 </head>
+
 <body>
-    
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel='stylesheet' href='/stylesheets/style.css' />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chelsea Market">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Artifika">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredericka the Great">
 
-<script src="/javascripts/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chelsea Market">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Artifika">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredericka the Great">
 
-<div class="header">
+    <script src="/javascripts/script.js"></script>
 
-    
+    <div class="header">
 
-    <div class="navbar-container">
-        <div class="navbar" id="navbar">
-        <ul>
-            <li><a href="/home">Home</a></li>
-            <li><a href="/upload">Upload</a></li>
-            <li><a href="/profile">Profile</a></li>
-            <li><a href="/logout">Logout</a></li>
-        </ul>
-</div>
-<i class="fa fa-bars" id="i" onclick="showNav()"></i>
 
-    </div>
+        <div class="header-profile-container">
+            <div class="site-logo"><a href="/home" style="font-family: 'Fredericka the Great'; font-size: 20px;">A .</a>
+            </div>
 
-    <div class="header-profile-container">
-        <div class="profile-logo">
-            <a href="/profile"><%=username%></a>
+            <div class="profile-logo">
+                <a href="/profile">
+                    <%=username%>
+                </a>
+            </div>
         </div>
-        <div class="site-logo"><a href="/home" style="font-family: 'Fredericka the Great'; font-size: 20px;">A .</a></div>
-    </div>
 
-</div>
+
+        <div class="navbar-container">
+            <div class="navbar" id="navbar">
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/upload">Upload</a></li>
+                    <li><a href="/profile">Profile</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" id="i" onclick="showNav()"></i>
+
+        </div>
+
+    </div>
 
 
 </body>
+
 </html>

@@ -11,7 +11,7 @@
         <form action="/login" method="post">
         <span class = "span">Login</span><br><hr style=" border: 1.5px solid black;"><br>
 
-          Username <br><input type="text" name="username" id="" class="input" required><br>
+          Username <br><input type="text" name="username" id="" class="input" oninput="this.value = this.value.toLowerCase()" required><br>
           Password <br><input type="password" name="password" id="password" class="input" minlength="6" maxlength="10" required><i class="fa fa-eye" style="margin-left: -1.8rem; cursor: pointer;" onclick="showPassword()"></i><br><br>
           <input type="submit" class="button" value="Login"><br><br>
           Haven't registered? <a href="/register">Register here</a>
